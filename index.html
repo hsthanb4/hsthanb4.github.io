@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archer · 课程与项目导航</title>
+<meta name="description" content="AI Infra / HPC 课程与学习项目导航">
+<style>
+  :root {
+    --bg: #fafafa; --card: #ffffff; --text: #1a1a1a; --muted: #6b7280;
+    --accent: #2563eb; --border: #e5e7eb; --hover-shadow: 0 8px 24px rgba(0,0,0,.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117; --card: #161b22; --text: #e6edf3; --muted: #8b949e;
+      --accent: #58a6ff; --border: #30363d; --hover-shadow: 0 8px 24px rgba(0,0,0,.4);
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; padding: 48px 16px 64px;
+  }
+  header { text-align: center; margin-bottom: 40px; max-width: 640px; }
+  header h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: .02em; }
+  header p { color: var(--muted); margin-top: 8px; font-size: .95rem; }
+  .grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px; width: 100%; max-width: 960px;
+  }
+  a.card {
+    display: block; background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px 22px; text-decoration: none; color: inherit;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+  a.card:hover { transform: translateY(-3px); box-shadow: var(--hover-shadow); border-color: var(--accent); }
+  .card .emoji { font-size: 1.5rem; }
+  .card h2 { font-size: 1.05rem; font-weight: 600; margin: 10px 0 6px; }
+  .card p { color: var(--muted); font-size: .88rem; }
+  .card .tag { display: inline-block; margin-top: 12px; font-size: .75rem; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 2px 10px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: .85rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📚 课程与项目导航</h1>
+  <p>AI Infra / HPC 学习体系与课程站点 · 全部内容开放访问</p>
+</header>
+
+<main class="grid">
+  <a class="card" href="https://hsthanb4.github.io/hpclearning/">
+    <div class="emoji">🖥️</div>
+    <h2>HPC / AI Infra 面试课程</h2>
+    <p>显存估算、训练排障、推理优化与算子面试的系统化课程</p>
+    <span class="tag">AI Infra</span>
+  </a>
+  <a class="card" href="https://hsthanb4.github.io/ai-infra-answers/">
+    <div class="emoji">📖</div>
+    <h2>AI Infra 问题手册</h2>
+    <p>中文问答手册：常见问题与可复现的验证步骤</p>
+    <span class="tag">手册</span>
+  </a>
+  <a class="card" href="https://hsthanb4.github.io/investlearning/">
+    <div class="emoji">📈</div>
+    <h2>InvestLearning</h2>
+    <p>投资与量化金融体系课程</p>
+    <span class="tag">金融</span>
+  </a>
+  <a class="card" href="https://hsthanb4.github.io/foodlab-course/">
+    <div class="emoji">🍳</div>
+    <h2>TheFoodLabLearning</h2>
+    <p>《料理实验室》现代烹饪科学与微观物理研习平台</p>
+    <span class="tag">科学</span>
+  </a>
+  <a class="card" href="https://hsthanb4.github.io/upward-management-course/">
+    <div class="emoji">🧭</div>
+    <h2>向上管理课程</h2>
+    <p>互联网大厂向上管理：12 周能力进阶实战手册</p>
+    <span class="tag">职场</span>
+  </a>
+  <a class="card" href="https://hsthanb4.github.io/pora-zh/">
+    <div class="emoji">🤖</div>
+    <h2>机器人自主性原理 · 中文精译</h2>
+    <p>Principles of Robot Autonomy 中文精译课程</p>
+    <span class="tag">机器人</span>
+  </a>
+</main>
+
+<footer>
+  <a href="https://github.com/hsthanb4">GitHub @hsthanb4</a>
+</footer>
+</body>
+</html>
